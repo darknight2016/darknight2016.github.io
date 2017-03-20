@@ -116,6 +116,7 @@ li{
 .arrow-left,
 .arrow-right{
 	font-family: 'fontello';
+	cursor: pointer;
 }
 .arrow-left:before{
 	content: '\e801';
@@ -293,29 +294,18 @@ li{
 }
 .address:before{
 	content: '\e802';
-	display: inline-block;
-	width: 20px;
-	color: #10a296;
-	background: #fff;
-	border-radius: 50%;
-	text-align: center;
 }
 .tel:before{
 	content: '\e801';
-	display: inline-block;
-	width: 20px;
-	color: #10a296;
-	background: #fff;
-	border-radius: 50%;
-	text-align: center;
 }
 .mail:before{
 	content: '\f0e0';
-	display: inline-block;
-	width: 20px;
-	color: #10a296;
-	background: #fff;
-	border-radius: 50%;
+}
+.address:before,
+.tel:before,
+.mail:before{
+	padding-right: 10px;
+	color: #fff;
 	text-align: center;
 }
 
@@ -334,6 +324,7 @@ li{
 	text-align: center;
 	line-height: 60px;
 	opacity: .6;
+	cursor: pointer;
 }
 .header-nav ul li label:hover{
 	opacity: 1;
